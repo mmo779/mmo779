@@ -30,7 +30,7 @@ CC = g++
 .cp.o:
 	$(CC) $(CFLAGS) -c $< $(INCLUDE_DIRS)
 
-targets1srcfile = armstrong
+targets1srcfile = test.cpp
 
 $(targets1srcfile): $$@.o
 	$(CC) -o $@ $@.o $(LINK_DIRS) $(LFLAGS)
